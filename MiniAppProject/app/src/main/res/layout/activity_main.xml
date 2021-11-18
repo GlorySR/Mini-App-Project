@@ -6,96 +6,278 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-            <View
-        android:id="@+id/colorBox"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:background="#EA9F5F"
-        android:visibility="visible"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"></View>
 
-    <View
-        android:id="@+id/colorBox2"
-        android:layout_width="match_parent"
-        android:layout_height="65dp"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="41dp"
-        android:background="#EA9F5F"
-        android:visibility="visible"
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
+        android:layout_width="357dp"
+        android:layout_height="186dp"
+        android:layout_marginStart="26dp"
+
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ABCFoodBankLogo"
+                android:layout_width="47dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="6dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                app:layout_constraintEnd_toStartOf="@+id/ABCFoodBankText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logo1" />
+
+            <TextView
+                android:id="@+id/ABCFoodBankText"
+                android:layout_width="216dp"
+                android:layout_height="24dp"
+                android:layout_marginStart="5dp"
+                android:layout_marginEnd="73dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="ABC Food Bank"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/ABCFoodBankLogo" />
+
+            <Button
+                android:id="@+id/ABCFoodBankButton"
+                android:layout_width="332dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="13dp"
+                android:layout_marginBottom="2dp"
+                android:text="Apply"
+                android:textSize="8sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="335dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="1dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="ABC Food Bank provides free meals for anyone in need in the community."
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/ABCFoodBankButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="355dp"
+                android:layout_height="84dp"
+                android:layout_marginStart="2dp"
+                android:layout_marginBottom="2dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/textView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/org1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="357dp"
+        android:layout_height="180dp"
+        android:layout_marginStart="29dp"
+
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="24dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/DEFRunForHealth"
+                android:layout_width="331dp"
+                android:layout_height="31dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="15dp"
+                android:text="Apply"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/DEFRunForHealthText"
+                android:layout_width="240dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginEnd="42dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="DEF Run For Health "
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/DEFRunForHealthLogo" />
+
+            <TextView
+                android:id="@+id/DEFRunForHealthDescription"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginBottom="1dp"
+                android:text="DEF Run For Health raises money for medical research."
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/DEFRunForHealth"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/DEFRunForHealthLogo"
+                android:layout_width="52dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView"
+                app:layout_constraintEnd_toStartOf="@+id/DEFRunForHealthText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logo2" />
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="350dp"
+                android:layout_height="79dp"
+                android:layout_marginStart="3dp"
+                android:layout_marginEnd="4dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/DEFRunForHealthDescription"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/org2" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView2"
+        android:layout_width="354dp"
+        android:layout_height="196dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="33dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="4dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/signUp"></View>
+        app:layout_constraintStart_toStartOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:id="@+id/GHIHomesButton"
+                android:layout_width="346dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="2dp"
+                android:layout_marginBottom="15dp"
+                android:text="Apply"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <TextView
+                android:id="@+id/GHIHomesButtonText"
+                android:layout_width="195dp"
+                android:layout_height="26dp"
+                android:layout_marginStart="13dp"
+                android:layout_marginEnd="71dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/roboto_slab"
+                android:text="GHI Homes"
+                android:textColor="@color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/GHIHomesButtonLogo" />
+
+            <ImageView
+                android:id="@+id/GHIHomesButtonLogo"
+                android:layout_width="69dp"
+                android:layout_height="32dp"
+                android:layout_marginStart="6dp"
+                android:layout_marginEnd="13dp"
+                app:layout_constraintBottom_toTopOf="@+id/imageView2"
+                app:layout_constraintEnd_toStartOf="@+id/GHIHomesButtonText"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/logo3" />
+
+            <TextView
+                android:id="@+id/GHIHomesButtonDescription"
+                android:layout_width="359dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="6dp"
+                android:text="GHI Homes helps build homes for families in poverty-stricken locations worldwide."
+                android:textColor="@color/black"
+                app:layout_constraintBottom_toTopOf="@+id/GHIHomesButton"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="356dp"
+                android:layout_height="82dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintBottom_toTopOf="@+id/GHIHomesButtonDescription"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:srcCompat="@drawable/org3" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.cardview.widget.CardView>
 
     <TextView
-        android:id="@+id/carrotCare"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="24dp"
-        android:text="CARROT CARE SOUP KITCHEN "
-        android:textSize="25sp"
+        android:id="@+id/CurrentOpportunities"
+        android:layout_width="361dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="1dp"
+        android:text=" Current Opportunities"
+        android:textColor="@color/black"
+        android:textSize="35sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/signUp"
+        app:layout_constraintBottom_toTopOf="@+id/cardView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carrotImageButton2" />
+        app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/signUp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="67dp"
-        android:text="SIGN UP"
-        app:layout_constraintBottom_toTopOf="@+id/colorBox2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/carrotCare" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <View
-        android:id="@+id/divider"
-        android:layout_width="409dp"
-        android:layout_height="1dp"
-        android:layout_marginStart="1dp"
-        android:layout_marginEnd="1dp"
-        android:layout_marginBottom="40dp"
-        android:background="?android:attr/listDivider"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/colorBox2" />
 
-    <ImageButton
-        android:id="@+id/carrotImageButton2"
-        android:layout_width="422dp"
-        android:layout_height="211dp"
-        android:layout_marginTop="15dp"
-        android:layout_marginBottom="93dp"
-        app:layout_constraintBottom_toTopOf="@+id/colorBox2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.545"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/colorBox"
-        app:layout_constraintVertical_bias="0.162"
-        app:srcCompat="@drawable/download" />
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-</androidx.constraintlayout.widget.ConstraintLayout>
